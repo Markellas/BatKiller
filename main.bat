@@ -11,7 +11,8 @@ echo.
 
 set /P way=Enter the number:
 
-if %way%==1 echo Creating 1M folders. 
-if %way%==1 echo Creating 1M folders..
-if %way%==1 echo Creating 1M folders...
-if %way%==1 echo Пон
+echo.
+if %way%==1 echo Creating 1M folders... 
+if %way%==1 FOR /L %%i IN (1,1,100) DO md %%i
+if %way%=1 echo.
+if %way%=1 Successfully created 1M folders!
